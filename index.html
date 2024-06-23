@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunapark with WebGL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container"></div>
+    <div class="controls">
+        <label for="rotationSpeed">Dönüş Hızı: </label>
+        <input type="range" id="rotationSpeed" min="0" max="0.02" step="0.002" value="0.005">
+        <label for="rotationDirection">Dönüş Yönü: </label>
+        <select id="rotationDirection">
+            <option value="1">Saat Yönünün Tersi </option>
+            <option value="-1">Saat Yönü</option>
+        </select>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
